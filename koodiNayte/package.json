@@ -1,0 +1,20 @@
+{
+  "name": "laitamainos_player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jQuery": "^1.7.4",
+    "mysql": "^2.12.0",
+    "socket.io": "^1.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

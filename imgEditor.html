@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> kuvaMuokkain </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/editor.css">
+  
+
+</head>
+
+<body>
+
+  <!-- ALOITUS-SIVU -->
+  <nav class="navbar  navbar-default" role="navigation">
+    <a href="index.html" class="navbar-brand"><img src="./muutKuvat/seaSide.png" alt="logo"></a>
+    <form action="./php/uploadEditor.php" method="post" enctype="multipart/form-data" style="float: left;margin-left:15px;margin-top:5px;"> Lisää kuva kansioon:
+<input id="chooseImg" type="file" name="fileToUpload" style="height: 36;">
+<input id="addImageBtn" type="submit" value="Lisää" name="submit" style="display:none;">
+</form>
+<form action="./php/deleteImgEditor.php" method="post" enctype="multipart/form-data" style="float: left;margin-left:15px;margin-top:5px;"> Poista kuva kansiosta:
+<input id="chooseImg2" type="file" name="fileToUpload" style="height: 36;">
+<input id="addImageBtn2" type="submit" value="Poista" name="submit" style="display:none;">
+</form>
+<a id="linkkiEditor" href="index.html" style="float: right; margin-bottom:15px;">Pääsivu</a>
+</nav>
+<!-- ALOITUS-SIVU LOPPUU-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1" id="left">
+      <ul class="list-unstyled" id="box1">
+        <li>
+          <a id="helpText1" class="listStyle" style="display:none;">Anna kuvalle nimi:</a>
+</li>
+<li>
+  <input name="fileName" placeholder="Kuvan nimi" class="listStyle" type="text" id="fileName" style="display:none;"></input>
+
+<form method="post">
+  <button id="saveImg" style="display:none;">tallennus</button>
+</form>
+</li>
+</ul>
+
+<select id="canvasSizeValue"> 
+        <option value="1080,1920" selected>Vaaka</option>
+        <option value="1313,767">Pysty </option>
+    </select>
+
+<div id="kuvaPreview" style="overflow:scroll; height:400px;"></div>
+<input id="theText" type="text">
+<button id="submit">Draw text on canvas</button><br>
+
+<form id="myform">
+  <button>erase</button>
+  <select id="fs"> 
+        <option value="Arial" selected>Arial</option>
+        <option value="Verdana ">Verdana </option>
+        <option value="Impact ">Impact </option>
+        <option value="Times New RomanS">Times New Roman</option>
+        <option value="Arial Black">Arial Black</option>
+    </select>
+
+  <input type="text" id="size" value="60">
+
+  <select id="colorChanger">
+    <option value="black" selected>black</option>
+    <option value="red">Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+</select>
+</form>
+
+<input id="theText1" type="text">
+<button id="submit1">Draw text on canvas</button><br>
+
+<form id="myform1">
+  <button>erase</button>
+  <select id="fs1"> 
+        <option value="Arial" selected>Arial</option>
+        <option value="Verdana ">Verdana </option>
+        <option value="Impact ">Impact </option>
+        <option value="Times New RomanS">Times New Roman</option>
+        <option value="Arial Black">Arial Black</option>
+    </select>
+
+  <input type="text" id="size1" value="60">
+
+  <select id="colorChanger1">
+    <option value="black" selected>black</option>
+    <option value="red">Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+</select>
+</form>
+</div>
+
+<div class="col-sm-11" id="kuvaAlue">
+  <div id="alue">
+    <canvas id="myCanvas" width="" height=""></canvas>
+  </div>
+</div>
+
+</div>
+</div>
+<script src="./js/mustHave/jquery.min.js"></script>
+  <script src="./js/mustHave/bootstrap.min.js"></script>
+  <script src="./js/mustHave/socket.io-1.4.5.js"></script>
+  <script src="./js/mustHave/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="./js/editor.js"></script>
+</body>
+
+</html>

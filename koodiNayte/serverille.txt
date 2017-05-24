@@ -1,0 +1,37 @@
+1.	Asenna apache2
+sudo apt-get install apache2 �y
+2.	Asenna MySQL
+sudo apt-get install mysql-server php5-mysql �y
+3. Asenna node.js
+sudo apt-get install nodejs	
+sudo apt-get install npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+4. asenna nodemon
+sudo npm install -g nodemon
+5.importtaa mysql database hommat
+mysql -uroot -praspberry
+-> craete database digitalsignage
+->use digitalsignage
+-> source /var/www/html/naytonnimi.sql
+->use digitalsignage
+->show tables;
+-> desc naytonnimi;
+
+php.connections ->
+
+xampp-phpMyAdmin->config.inc tiedostosta:
+//server, username, password, database
+$con = @mysqli_connect("localhost","root","raspberry","digitalsignage");
+
+6. k�ynnist� nodemoni
+npm nodemon folderissa
+
+
+
+
+
+
+
+
+n�m� tarvii muuttaa;
+ main.js rivi 90 -> digitalsignage pois

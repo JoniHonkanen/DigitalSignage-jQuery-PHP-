@@ -1,0 +1,113 @@
+body{
+	    background-color: #e6f7ff !important;
+}
+
+.row{
+  height:100vh;
+}
+
+#box1{
+  height:100px;
+  border-bottom: 1px solid #333333;
+}
+
+#left{
+  z-index: 99;
+  position: absolute;
+  height: 114vh;
+  width:150px;
+  background-color:#E8F4F8;
+  margin-bottom:15px;
+  box-shadow: 12px 10px 12px #888888;
+}
+
+#kuvaAlue{
+  margin-left:150px;
+}
+
+#size{
+  width: 135px
+}
+#fs{
+  width: 135px;
+}
+
+#alue{
+  width: 100%;
+  background-color:#E8F4F8;
+  margin-bottom:15px;
+  box-shadow: 12px 10px 12px #888888;
+}
+#kuvaPreview {
+	height: 100%;
+}
+
+#kuvaPreview img {
+	height: 60px;
+	width: 60px;
+	margin: 5px;
+	float: left;
+	cursor: pointer;
+  overflow:scroll;
+}
+
+
+#downloadLnk {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+#fileName{  
+    width:120px;
+}
+
+#theText
+{  
+    height: 20px;
+    width:120px;
+}
+
+#helpText1{
+  color: black;
+}
+
+
+#controllers {
+  width: 600px;
+  font-size: 0.8em;
+  color: #333;
+}
+#paint {
+  border: 1px solid #000;
+  background: #fff;
+}
+.controller {
+  display: inline-block;
+  background: #eee;
+  border: 1px solid #e7e7e7;
+  padding: 5px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+	margin-left:20px;
+  height: 100%;
+}
+
+#linkkiEditor{
+font-size: 25px;
+height: 50px;
+line-height: 50px;
+padding: 10px 50px;
+vertical-align: center;
+}

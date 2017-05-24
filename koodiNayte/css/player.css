@@ -1,0 +1,54 @@
+body{
+  margin:0;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.marquee {
+ text-align:left;
+  z-index:1;
+  position: absolute;
+  left: 0;
+  min-height: 90px !important;
+  overflow: hidden;
+  color: white;
+  font-family: Impact;
+  font-size: 60px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color : transparent;
+}
+#testi {
+  position: relative;
+width:100%;
+overflow: hidden;
+padding:0;
+}
+#marquee1 {
+	top: 39%;
+  left:25%;
+  
+}
+#marquee2 {
+	top: 46.5%;
+  left:25%;
+}
+#marquee3 {
+	top: 54%;
+  left:25%;
+}
+#marquee4 {
+	top: 61%;
+  left:25%;
+}
+#marquee5 {
+	top:68.4%;
+  left:25%;
+}
+#marquee6 {
+	top: 76%;
+  left:25%;
+}
+#marquee7 {
+  left:45%;
+  top: 40%;
+}
