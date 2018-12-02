@@ -21,7 +21,7 @@ php.connections ->
 
 xampp-phpMyAdmin->config.inc tiedostosta:
 //server, username, password, database
-$con = @mysqli_connect("localhost","root","raspberry","digitalsignage");
+$con = @mysqli_connect("xxx");
 
 6. k�ynnist� nodemoni
 npm nodemon folderissa
